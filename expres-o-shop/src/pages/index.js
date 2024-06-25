@@ -68,6 +68,10 @@ if (menu.length === 0) return (<h1>Loading...</h1>);
               padding: "5px",
               width: "300px",
             }}>
+              <img src={item.image} style={{
+                width: "100%",
+                borderRadius: "15px",
+              }}></img>
               <h3>{item.name}</h3>
               <p>{item.description}</p>
               <p>${item.price}</p>

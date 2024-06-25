@@ -16,7 +16,8 @@
       "id": 3,
       "name": "Long Black",
       "description": "Double shot of espresso with hot water",
-      "price": 2
+      "price": 2,
+      "image": "https://github.com/dancey-apple/imageLibrary/blob/main/synthdrink.png?raw=true"
     },
     {
       "id": 4,
