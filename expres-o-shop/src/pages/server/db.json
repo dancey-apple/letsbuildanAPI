@@ -71,26 +71,5 @@
       "image": "https://github.com/dancey-apple/letsbuildanAPI/blob/main/images/espresso.png?raw=true"
     }
   ],
-  "cart": [
-    {
-      "id": 6,
-      "quantity": 1
-    },
-    {
-      "id": 3,
-      "quantity": 1
-    },
-    {
-      "id": 3,
-      "quantity": 1
-    },
-    {
-      "id": 3,
-      "quantity": 1
-    },
-    {
-      "id": 5,
-      "quantity": 1
-    }
-  ]
+  "cart": []
 }
