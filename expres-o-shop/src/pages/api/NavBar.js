@@ -22,8 +22,20 @@ const NavBar = () => {
             backgroundColor: "#e02880",
             color: "white",
             }}>
-            <button onClick={goToHome}>Home</button>
-            <button onClick={goToCart}>Cart</button>
+            <button onClick={goToHome} style = {{
+                backgroundColor: "#131728",
+                color: "#e02880",
+                border: "none",
+                cursor: "pointer",
+                borderRadius: "15px",
+            }}>Home</button>
+            <button onClick={goToCart} style = {{
+                backgroundColor: "#131728",
+                color: "#e02880",
+                border: "none",
+                cursor: "pointer",
+                borderRadius: "15px",
+            }}>Cart</button>
         </nav>
     );
 }
