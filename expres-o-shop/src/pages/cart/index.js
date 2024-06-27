@@ -2,13 +2,13 @@ import { useState,useEffect } from "react";
 
 export default function Checkout() {
     
-    const [cartItems, setCartItems] = useState({cart :[]});
+    const [cartItems, setCartItems] = useState({cart:[]});
 
     useEffect(() => {
         async function loadData() {
-        const res = await fetch("/api/cart/${id}");
+        const res = await fetch("/api/cart");
         const data = await res.json();
-        setCartItems(data.cart);
+        setCartItems(data);
         }
         loadData();
     }, [])
@@ -31,8 +31,7 @@ export default function Checkout() {
             >
             {cartItems.cart.map((item) => {
                 return (
-                <div
-                    key={item.id}
+                <div key={item.id}
                     style={{}}
                 >
                 <h3>{item.id}</h3>
