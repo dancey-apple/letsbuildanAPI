@@ -2,23 +2,23 @@ import React, { useEffect, useState } from 'react';
 
 const Cart = () => {
     const [cartItems, setCartItems] = useState([]);
-    const [loading, setLaoding] = useState(true);
+    const [loading, setLoading] = useState(true);
     const [error, setError] = useState(null);
 
     useEffect(() => {
         fetch("/api/cart")
-            .then(respones => Response.json())
+            .then(response => res.json())
             .then(db => {
                 if (db.cart) {
                     setCartItems(db.cart);
                 } else {
                     setError(db.error || "Failed to retrieve cart items");
                 }
-                setLaoding(false);
+                setLoading(false);
             })
             .catch(error => {
                 setError("Failed to retrieve cart items");
-                setLaoding(false);
+                setLoading(false);
             });
     }, []);
 

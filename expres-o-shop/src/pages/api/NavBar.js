@@ -5,7 +5,7 @@ const NavBar = () => {
     const router = useRouter();
     
     const goToCart = () => {
-        router.push("/Cart");
+        router.push("/cart");
     }
 
     const goToHome = () => {
