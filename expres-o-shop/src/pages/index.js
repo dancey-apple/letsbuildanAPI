@@ -20,7 +20,7 @@ function addToCart(id) {
     headers: {
       "Content-Type": "application/json",
     },
-    body: JSON.stringify({id: id, quantity: 1})
+    body: JSON.stringify({id: id, quantity: 1, name: menu[id].name, price: menu[id].price, image: menu[id].image})
   });
 }
 

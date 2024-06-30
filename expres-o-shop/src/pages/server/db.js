@@ -21,9 +21,21 @@ export const db = {
     get() {
       return readDb().cart;
     },
+    getById(id) {
+      return readDb().cart.find((item) => item.id === id);
+    },
     add(menuItemId) {
       const db = readDb();
       db.cart.push(menuItemId);
+      writeDb(db);
+    },
+    updateById(cartItemId, newQuantity) {
+      const db = readDb();
+      const foundItem = db.cart.find((cartItem) => cartItem.id === cartItemId);
+      if (!foundItem) {
+        throw new Error(`Item with id ${cartItemId} not found in cart`);
+      }
+      foundItem.quantity = newQuantity;
       writeDb(db);
     },
     delete(menuItemId) {

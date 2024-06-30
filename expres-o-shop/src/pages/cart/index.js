@@ -61,8 +61,12 @@ export default function Checkout() {
                         padding: "5px",
                         width: "300px",
                     }}>
-                    <h3>{item.id}</h3>
-                    <p>{item.quantity}</p>
+                    <img src={item.image} style={{
+                        width: "100%",
+                        borderRadius: "15px",
+                    }}></img>
+                    <h3>{item.name}</h3>
+                    <p>Quantity: {item.quantity}</p>
                     <button onClick={() => removeFromCart(item.id)} style={{
                         backgroundColor: "#e02880",
                         color: "#131728",
