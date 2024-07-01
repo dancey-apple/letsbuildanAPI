@@ -20,7 +20,10 @@ const NavBar = () => {
             alignItems: "center",
             padding: "10px",
             backgroundColor: "#e02880",
-            color: "white",
+            position: "fixed",
+            top: "0",
+            left: "0",
+            right: "0",
             }}>
             <button onClick={goToHome} style = {{
                 backgroundColor: "#131728",
@@ -28,6 +31,8 @@ const NavBar = () => {
                 border: "none",
                 cursor: "pointer",
                 borderRadius: "15px",
+                padding: "5px",
+                fontSize: "1.5em",
             }}>Home</button>
             <button onClick={goToCart} style = {{
                 backgroundColor: "#131728",
@@ -35,6 +40,8 @@ const NavBar = () => {
                 border: "none",
                 cursor: "pointer",
                 borderRadius: "15px",
+                padding: "5px",
+                fontSize: "1.5em",
             }}>Cart</button>
         </nav>
     );

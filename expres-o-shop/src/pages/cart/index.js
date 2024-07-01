@@ -29,6 +29,7 @@ export default function Checkout() {
                     display: "flex",
                     justifyContent: "center",
                     width: "200px",
+                    margin: "25px 0 0 0",
                 }}></img>
                 <div  style={{
                     color: "#e02880",

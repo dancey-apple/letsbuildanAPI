@@ -1,5 +1,4 @@
 import { useState,useEffect } from "react";
-import NavBar from "./api/NavBar";
 
 export default function Home() {
 
@@ -15,13 +14,17 @@ export default function Home() {
   }, [])
 
 function addToCart(id) {
-  fetch(`/api/cart`, {
-    method: "POST",
-    headers: {
-      "Content-Type": "application/json",
-    },
-    body: JSON.stringify({id: id, quantity: 1, name: menu[id].name, price: menu[id].price, image: menu[id].image})
-  });
+  const item = menu.find(item => item.id === id);
+
+  if (item) {
+    fetch(`/api/cart`, {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify({id: id, quantity: 1, name: menu[id].name, price: menu[id].price, image: menu[id].image})
+    });
+  }
 }
 
 if (menu.length === 0) return (<h1>Loading...</h1>);
@@ -37,7 +40,8 @@ if (menu.length === 0) return (<h1>Loading...</h1>);
         <img src='https://github.com/dancey-apple/imageLibrary/blob/main/express-0-coffee.png?raw=true'style={{
           display: "flex",
           justifyContent: "center",
-          width: "200px",
+          width: "250px",
+          margin: "25px 0 0 0",
         }}></img>
         <div  style={{
           color: "#e02880",

@@ -1,75 +1,104 @@
 {
   "menu": [
     {
-      "id": 1,
+      "id": 0,
       "name": "Latte",
       "description": "A couple of espresso shots with steamed milk",
       "price": 5,
       "image": "https://github.com/dancey-apple/letsbuildanAPI/blob/main/images/latte.png?raw=true"
     },
     {
-      "id": 2,
+      "id": 1,
       "name": "Flat White",
       "description": "Espresso shots with steamed milk and a little foam",
       "price": 4,
       "image": "https://github.com/dancey-apple/letsbuildanAPI/blob/main/images/flatWhite.png?raw=true"
     },
     {
-      "id": 3,
+      "id": 2,
       "name": "Long Black",
       "description": "Double shot of espresso with hot water",
       "price": 2,
       "image": "https://github.com/dancey-apple/letsbuildanAPI/blob/main/images/longBlack.png?raw=true"
     },
     {
-      "id": 4,
+      "id": 3,
       "name": "Cappuccino",
       "description": "Espresso shots with steamed milk, foam and chocolate",
       "price": 6,
       "image": "https://github.com/dancey-apple/letsbuildanAPI/blob/main/images/cappuccino.png?raw=true"
     },
     {
-      "id": 5,
+      "id": 4,
       "name": "Affogato",
       "description": "Vanilla ice cream with a shot of espresso",
       "price": 5,
       "image": "https://github.com/dancey-apple/letsbuildanAPI/blob/main/images/affogato.png?raw=true"
     },
     {
-      "id": 6,
+      "id": 5,
       "name": "Macchiato",
       "description": "Espresso with a dash of frothy milk",
       "price": 5,
       "image": "https://github.com/dancey-apple/letsbuildanAPI/blob/main/images/macchiato.png?raw=true"
     },
     {
-      "id": 7,
+      "id": 6,
       "name": "Mocha",
       "description": "Espresso with steamed milk, chocolate and whipped cream",
       "price": 5,
       "image": "https://github.com/dancey-apple/letsbuildanAPI/blob/main/images/mocha.png?raw=true"
     },
     {
-      "id": 8,
+      "id": 7,
       "name": "Piccolo",
       "description": "Espresso with steamed milk",
       "price": 5,
       "image": "https://github.com/dancey-apple/letsbuildanAPI/blob/main/images/piccolo.png?raw=true"
     },
     {
-      "id": 9,
+      "id": 8,
       "name": "Ristretto",
       "description": "Espresso with less water",
       "price": 5,
       "image": "https://github.com/dancey-apple/letsbuildanAPI/blob/main/images/ristretto.png?raw=true"
     },
     {
-      "id": 10,
+      "id": 9,
       "name": "Espresso",
       "description": "A shot of espresso",
       "price": 3,
       "image": "https://github.com/dancey-apple/letsbuildanAPI/blob/main/images/espresso.png?raw=true"
     }
   ],
-  "cart": []
+  "cart": [
+    {
+      "id": 0,
+      "quantity": 2,
+      "name": "Latte",
+      "price": 5,
+      "image": "https://github.com/dancey-apple/letsbuildanAPI/blob/main/images/latte.png?raw=true"
+    },
+    {
+      "id": 3,
+      "quantity": 2,
+      "name": "Cappuccino",
+      "price": 6,
+      "image": "https://github.com/dancey-apple/letsbuildanAPI/blob/main/images/cappuccino.png?raw=true"
+    },
+    {
+      "id": 1,
+      "quantity": 1,
+      "name": "Flat White",
+      "price": 4,
+      "image": "https://github.com/dancey-apple/letsbuildanAPI/blob/main/images/flatWhite.png?raw=true"
+    },
+    {
+      "id": 9,
+      "quantity": 1,
+      "name": "Espresso",
+      "price": 3,
+      "image": "https://github.com/dancey-apple/letsbuildanAPI/blob/main/images/espresso.png?raw=true"
+    }
+  ]
 }

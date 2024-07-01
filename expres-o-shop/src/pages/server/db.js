@@ -24,9 +24,9 @@ export const db = {
     getById(id) {
       return readDb().cart.find((item) => item.id === id);
     },
-    add(menuItemId) {
+    add(menuItem) {
       const db = readDb();
-      db.cart.push(menuItemId);
+      db.cart.push(menuItem);
       writeDb(db);
     },
     updateById(cartItemId, newQuantity) {
